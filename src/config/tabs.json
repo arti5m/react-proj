@@ -1,0 +1,19 @@
+{
+  "tabs": [
+    {
+      "name": "randomFacts",
+      "label": "Random Facts",
+      "type": "RANDOM_FACTS"
+    },
+    {
+      "name": "cats",
+      "label": "Random Cat Facts",
+      "type": "CAT_FACTS"
+    },
+    {
+      "name": "todo",
+      "label": "Todos",
+      "type": "TODOS"
+    }
+  ]
+}

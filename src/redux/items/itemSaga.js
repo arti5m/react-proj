@@ -7,12 +7,12 @@ import {
   FETCH_ITEM
 } from './itemActions'
 import {
-  fetchFact
-} from './util'
+  fetchCatFact
+} from '../util'
 
 function createItemSaga() {
   function* fetchItemSaga() {
-    const res = yield fetchFact()
+    const res = yield fetchCatFact()
     const fact = yield res.json()
 
     yield put({

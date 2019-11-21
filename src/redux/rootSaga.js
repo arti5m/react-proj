@@ -2,7 +2,7 @@ import "regenerator-runtime/runtime"
 import {
   spawn
 } from 'redux-saga/effects'
-import createItemSaga from './itemSaga'
+import createItemSaga from './items/itemSaga'
 
 function* rootSaga() {
   const { watchFetchItemSaga } = createItemSaga()

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import ItemList from './ItemList'
-import ItemInput from './ItemInput'
 import configureStore from './redux/configureStore'
+import TabNav from './components/TabNav'
+import Pane from './components/Pane'
 
 const store = configureStore()
 
@@ -10,8 +10,8 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <ItemList />
-        <ItemInput />
+        <TabNav />
+        <Pane />
       </Provider>
     )
   }

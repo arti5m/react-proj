@@ -1,10 +1,10 @@
 import React from 'react'
 import {
-  deleteItem
-} from './redux/itemActions'
+  activateTab
+} from '../redux/tabnav/tabnavActions'
 import { connect } from 'react-redux'
 
-class Item extends React.Component {
+class Tab extends React.Component {
   constructor(props) {
     super(props)
 
@@ -16,10 +16,10 @@ class Item extends React.Component {
       item: {
         id
       },
-      deleteItem
+      activateTab
     } = this.props
 
-    deleteItem(id)
+    activateTab(id)
   }
 
   render() {
@@ -30,16 +30,15 @@ class Item extends React.Component {
     } = this.props
 
     return (
-      <li>
+      <button onClick={this.handleClick}>
         {fact}
-        <button onClick={this.handleClick}>delete</button>
-      </li>
+      </button>
     )
   }
 }
 
 const mapDispatchToProps = ({
-  deleteItem: (id) => deleteItem(id)
+  activateTab: (id) => activateTab(id)
 })
 
-export default connect(null, mapDispatchToProps)(Item)
+export default connect(null, mapDispatchToProps)(Tab)

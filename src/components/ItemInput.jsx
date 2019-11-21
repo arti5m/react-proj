@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {
   fetchItem
-} from './redux/itemActions'
+} from '../redux/items/itemActions'
 
 
 class ItemInput extends React.Component {
